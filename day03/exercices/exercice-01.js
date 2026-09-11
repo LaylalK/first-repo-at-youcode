@@ -15,3 +15,9 @@
 // 1. Identifie les données nécessaires.
 // 2. Écris ta solution sous cette ligne.
 // TODO: écris ta solution ici.
+function soustraire(a, b){
+    return a - b; 
+}
+
+console.log(soustraire(20, 18));
+console.log(soustraire(5, 9));
