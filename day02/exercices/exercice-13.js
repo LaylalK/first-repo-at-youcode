@@ -1,24 +1,26 @@
 /**
  * ─────────────────────────────────────────────────────────────
- * JOUR 03 · EXERCICE 02 · NIVEAU 1 : FONDATIONS (DÉBUTANTS)
- * LE MULTIPLICATEUR
+ * JOUR 02 · EXERCICE 13 · NIVEAU 2 : CONSOLIDATION (INTERMÉDIAIRES)
+ * SUITE DE FIBONACCI
  * ─────────────────────────────────────────────────────────────
  *
  * 🎯 MISSION
- * Créez une fonction fléchée multiplier(a, b) qui retourne le produit de a et b.
+ * Générez et affichez les 10 premiers nombres de la suite de Fibonacci. (La suite commence par 0, 1. Ensuite, chaque nombre est la somme des deux précédents : 0, 1, 1, 2, 3, 5, 8, 13...).
  *
- * 📖 Consigne détaillée : ../03-exercices.md#exercice-02
- * ▶️ Commande : node day03/exercices/exercice-02.js
+ * 📖 Consigne détaillée : ../03-exercices.md#exercice-13
+ * ▶️ Commande : node day02/exercices/exercice-13.js
  */
 'use strict';
 
 // 1. Identifie les données nécessaires.
 // 2. Écris ta solution sous cette ligne.
 // TODO: écris ta solution ici.
-const multiplier = (a, b) => {
-    return a * b;
-};
+let a = 0;
+let b = 1;
 
-console.log(multiplier(12, 2)); 
-console.log(multiplier(9, 8));
-
+for (let i = 0; i < 10; i++) {
+ console.log(a);
+let suivant = a + b;
+a = b;
+b = suivant;
+}

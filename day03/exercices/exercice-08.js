@@ -15,3 +15,18 @@
 // 1. Identifie les données nécessaires.
 // 2. Écris ta solution sous cette ligne.
 // TODO: écris ta solution ici.
+function jouerFizzBuzz(max){
+    for (let i = 1; i <= 15; i++){
+if (i % 3 === 0 && i % 5 === 0){
+console.log("FizzBuzz");
+}
+else if (i % 5 === 0){
+console.log("Buzz");
+}else if (i % 3 === 0){
+console.log("Fizz");
+}else {
+console.log(i);
+}
+}
+}
+jouerFizzBuzz(15);

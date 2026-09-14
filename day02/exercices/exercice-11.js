@@ -1,21 +1,27 @@
 /**
  * ─────────────────────────────────────────────────────────────
- * JOUR 03 · EXERCICE 06 · NIVEAU 1 : FONDATIONS (DÉBUTANTS)
- * MESSAGE D'ACCUEIL
+ * JOUR 02 · EXERCICE 11 · NIVEAU 2 : CONSOLIDATION (INTERMÉDIAIRES)
+ * PUISSANCE MANUELLE
  * ─────────────────────────────────────────────────────────────
  *
  * 🎯 MISSION
- * Créez une fonction bienvenue(prenom, nom) qui retourne "Bienvenue [prenom] [nom]".
+ * Calculez 2 à la puissance 10 en utilisant une boucle for (sans utiliser Math.pow ni ).
  *
- * 📖 Consigne détaillée : ../03-exercices.md#exercice-06
- * ▶️ Commande : node day03/exercices/exercice-06.js
+ * RÉSULTAT ATTENDU
+ * 1024
+ *
+ * 📖 Consigne détaillée : ../03-exercices.md#exercice-11
+ * ▶️ Commande : node day02/exercices/exercice-11.js
  */
-'use strict';   
+'use strict';
 
 // 1. Identifie les données nécessaires.
 // 2. Écris ta solution sous cette ligne.
 // TODO: écris ta solution ici.
-function bienvenue(prenom, nom){
-    return "Bienvenue" + prenom + nom;
+let base = 2
+let puissance = 10
+let resultat = 1
+for (let i = 0; i < puissance; i++){
+    resultat *= base;
 };
-console.log(bienvenue ( " layla", " lakhlifi" ));
+console.log(resultat);

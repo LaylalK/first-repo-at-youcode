@@ -1,27 +1,31 @@
 /**
  * ─────────────────────────────────────────────────────────────
- * JOUR 03 · EXERCICE 18 · NIVEAU 3 : DÉFI (AVANCÉS)
- * CURRYFICATION (CURRYING)
+ * JOUR 02 · EXERCICE 18 · NIVEAU 3 : DÉFI (AVANCÉS)
+ * CONJECTURE DE SYRACUSE (COLLATZ)
  * ─────────────────────────────────────────────────────────────
  *
  * 🎯 MISSION
- * Créez une fonction multiplicateur(facteur) qui retourne une fonction prenant un argument nombre et retournant nombre * facteur.
- * Testez avec : const double = multiplicateur(2); console.log(double(10)); // 20.
+ * Prenez N = 15.
+ * - Si N est pair, on le divise par 2.
+ * - Si N est impair, on le multiplie par 3 et on ajoute 1.
+ * Répétez jusqu'à ce que N vaille 1. Comptez le nombre d'étapes (itérations) nécessaires pour arriver à 1.
  *
  * 📖 Consigne détaillée : ../03-exercices.md#exercice-18
- * ▶️ Commande : node day03/exercices/exercice-18.js
+ * ▶️ Commande : node day02/exercices/exercice-18.js
  */
 'use strict';
 
 // 1. Identifie les données nécessaires.
 // 2. Écris ta solution sous cette ligne.
 // TODO: écris ta solution ici.
-function multiplicateur(facteur){
-    return function(nombre){
-        return nombre * facteur;
-    };
+let n = 15;
+let steps = 0;
+while (n > 1) {
+    if (n % 2 === 0) {
+        n = n / 2;
+    } else {
+        n = n * 3 + 1;
+    }
+    steps++;
 }
-const double = multiplicateur(2);
-console.log(double(10));
-const triple = multiplicateur(3);
-console.log(triple(10));
+console.log(`Nombre d'étapes nécessaires pour arriver à 1 : ${steps}`);

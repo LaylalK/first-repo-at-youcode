@@ -1,24 +1,23 @@
 /**
  * ─────────────────────────────────────────────────────────────
- * JOUR 03 · EXERCICE 02 · NIVEAU 1 : FONDATIONS (DÉBUTANTS)
- * LE MULTIPLICATEUR
+ * JOUR 02 · EXERCICE 14 · NIVEAU 2 : CONSOLIDATION (INTERMÉDIAIRES)
+ * LE PLUS PETIT CARRÉ PARFAIT SUPÉRIEUR
  * ─────────────────────────────────────────────────────────────
  *
  * 🎯 MISSION
- * Créez une fonction fléchée multiplier(a, b) qui retourne le produit de a et b.
+ * Trouvez et affichez le plus petit carré parfait (ex: 4, 9, 16) strictement supérieur à 1000 en utilisant un while.
  *
- * 📖 Consigne détaillée : ../03-exercices.md#exercice-02
- * ▶️ Commande : node day03/exercices/exercice-02.js
+ * 📖 Consigne détaillée : ../03-exercices.md#exercice-14
+ * ▶️ Commande : node day02/exercices/exercice-14.js
  */
 'use strict';
 
 // 1. Identifie les données nécessaires.
 // 2. Écris ta solution sous cette ligne.
 // TODO: écris ta solution ici.
-const multiplier = (a, b) => {
-    return a * b;
-};
-
-console.log(multiplier(12, 2)); 
-console.log(multiplier(9, 8));
-
+let n = 1;
+while (n * n <= 1000) {
+ n++;
+}
+let carreParfait = n * n;
+console.log(`Le plus petit carré parfait supérieur à 1000 est ${carreParfait} (${n} x ${n})`);
