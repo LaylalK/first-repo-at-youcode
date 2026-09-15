@@ -1,20 +1,25 @@
 /**
  * ─────────────────────────────────────────────────────────────
- * JOUR 04 · EXERCICE 12 · NIVEAU 2 : CONSOLIDATION (INTERMÉDIAIRES)
- * INVERSION DE MOTS DANS UNE PHRASE
+ * JOUR 06 · EXERCICE 02 · NIVEAU 1 : FONDATIONS (DÉBUTANTS)
+ * MISE À JOUR
  * ─────────────────────────────────────────────────────────────
  *
  * 🎯 MISSION
- * Prenez la phrase "Bonjour le monde" et transformez-la en "monde le Bonjour".
+ * Changez l'âge de l'utilisateur précédent pour l'augmenter de 1, et ajoutez-lui une propriété email.
  *
- * 📖 Consigne détaillée : ../03-exercices.md#exercice-12
- * ▶️ Commande : node day04/exercices/exercice-12.js
+ * 📖 Consigne détaillée : ../03-exercices.md#exercice-02
+ * ▶️ Commande : node day06/exercices/exercice-02.js
  */
 'use strict';
 
 // 1. Identifie les données nécessaires.
 // 2. Écris ta solution sous cette ligne.
 // TODO: écris ta solution ici.
-const phrase = "Bonjour le monde";
-let phraseInversee = phrase.split(" ").reverse().join(" ");
-console.log(phraseInversee);
+const utilisateur ={
+nom: "layla",
+age: 20,
+estadmin: true,
+}
+utilisateur.age +=1
+utilisateur.email = "layla@lakhlifi.com";
+console.log(utilisateur);

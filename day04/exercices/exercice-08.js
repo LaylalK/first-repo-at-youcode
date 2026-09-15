@@ -15,3 +15,9 @@
 // 1. Identifie les données nécessaires.
 // 2. Écris ta solution sous cette ligne.
 // TODO: écris ta solution ici.
+function capitaliser(mot){
+    const premierLettre = mot[0].toUpperCase();
+    const resteDumot = mot.slice(1).toLowerCase();
+    return premierLettre + resteDumot;
+}
+console.log(capitaliser("yOUcoDe"));

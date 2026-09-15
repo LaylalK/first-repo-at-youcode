@@ -15,3 +15,9 @@
 // 1. Identifie les données nécessaires.
 // 2. Écris ta solution sous cette ligne.
 // TODO: écris ta solution ici.
+function validerPlaque(plaque) {
+    const regexPlaque = /^\d{1,5}-[A-Za-z]{1,2}-\d{1,2}$/;
+    return regexPlaque.test(plaque);
+}
+console.log(validerPlaque("1234-A-56"));
+console.log(validerPlaque("12345-AB-6"));

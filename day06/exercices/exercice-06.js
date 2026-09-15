@@ -1,20 +1,24 @@
 /**
  * ─────────────────────────────────────────────────────────────
- * JOUR 04 · EXERCICE 12 · NIVEAU 2 : CONSOLIDATION (INTERMÉDIAIRES)
- * INVERSION DE MOTS DANS UNE PHRASE
+ * JOUR 06 · EXERCICE 06 · NIVEAU 1 : FONDATIONS (DÉBUTANTS)
+ * EXTRACTION DES VALEURS
  * ─────────────────────────────────────────────────────────────
  *
  * 🎯 MISSION
- * Prenez la phrase "Bonjour le monde" et transformez-la en "monde le Bonjour".
+ * Utilisez Object.values() pour récupérer un tableau contenant toutes les valeurs de l'objet, et affichez-le.
  *
- * 📖 Consigne détaillée : ../03-exercices.md#exercice-12
- * ▶️ Commande : node day04/exercices/exercice-12.js
+ * 📖 Consigne détaillée : ../03-exercices.md#exercice-06
+ * ▶️ Commande : node day06/exercices/exercice-06.js
  */
 'use strict';
 
 // 1. Identifie les données nécessaires.
 // 2. Écris ta solution sous cette ligne.
 // TODO: écris ta solution ici.
-const phrase = "Bonjour le monde";
-let phraseInversee = phrase.split(" ").reverse().join(" ");
-console.log(phraseInversee);
+let utilisateur ={
+    nom: "layla",
+    age:  20,
+};
+let valeurs = Object.values(utilisateur);
+console.log(valeurs.length);
+console.log(valeurs);

@@ -15,3 +15,17 @@
 // 1. Identifie les données nécessaires.
 // 2. Écris ta solution sous cette ligne.
 // TODO: écris ta solution ici.
+function compterLettreE(texte) {
+    let compteur = 0;
+    const texteMinuscule = texte.toLowerCase();
+
+  for (let i = 0; i < texteMinuscule.length; i++) {
+    if (texteMinuscule[i] === 'e') {
+      compteur++;
+    }
+  }
+
+  return compteur;
+}
+const paragraphe = "j'ai étudié le code de javascript";
+console.log(compterLettreE(paragraphe));

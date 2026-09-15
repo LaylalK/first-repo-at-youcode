@@ -16,3 +16,10 @@
 // 1. Identifie les données nécessaires.
 // 2. Écris ta solution sous cette ligne.
 // TODO: écris ta solution ici.
+const phrase = "Hyper Text Markup Language";
+const mots = phrase.split(" ");
+let acronyme = "";
+for (let i = 0; i < mots.length; i++){
+    acronyme += mots[i][0].toUpperCase();
+}
+console.log(acronyme);

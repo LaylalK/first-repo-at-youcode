@@ -15,3 +15,19 @@
 // 1. Identifie les données nécessaires.
 // 2. Écris ta solution sous cette ligne.
 // TODO: écris ta solution ici.
+function chiffrerCesar(texte, decalage){
+    let resultat = "";
+
+  for (let i = 0; i < texte.length; i++) {
+    let charCode = texte.charCodeAt(i);
+    if (charCode >= 65 && charCode <= 90) {
+      charCode = ((charCode - 65 + decalage) % 26) + 65;
+    }
+    else if (charCode >= 97 && charCode <= 122) {
+      charCode = ((charCode - 97 + decalage) % 26) + 97;
+    }
+    resultat += String.fromCharCode(charCode);
+  }
+  return resultat;
+}
+console.log(chiffrerCesar("ABC", 1));

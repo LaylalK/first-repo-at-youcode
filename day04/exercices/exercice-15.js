@@ -16,3 +16,10 @@
 // 1. Identifie les données nécessaires.
 // 2. Écris ta solution sous cette ligne.
 // TODO: écris ta solution ici.
+function sontAnagrammes(mot1, mot2) {
+    const mot1Trie = mot1.toLowerCase().split("").sort().join("");
+    const mot2Trie = mot2.toLowerCase().split("").sort().join("");
+    return mot1Trie === mot2Trie;
+    }
+    console.log(sontAnagrammes("chien", "niche"));
+    

@@ -1,20 +1,23 @@
 /**
  * ─────────────────────────────────────────────────────────────
- * JOUR 04 · EXERCICE 07 · NIVEAU 1 : FONDATIONS (DÉBUTANTS)
- * NETTOYAGE DE SCRAPING BASIQUE
+ * JOUR 06 · EXERCICE 07 · NIVEAU 1 : FONDATIONS (DÉBUTANTS)
+ * TABLEAU D'OBJETS BASIQUE
  * ─────────────────────────────────────────────────────────────
  *
  * 🎯 MISSION
- * Vous avez récupéré la chaîne suivante d'un champ de formulaire : "   utilisateur@email.com   ". Nettoyez-la pour enlever les espaces inutiles.
+ * Créez un tableau contenant 3 objets représentant des livres (titre, auteur). Affichez le titre du 2ème livre.
  *
  * 📖 Consigne détaillée : ../03-exercices.md#exercice-07
- * ▶️ Commande : node day04/exercices/exercice-07.js
+ * ▶️ Commande : node day06/exercices/exercice-07.js
  */
 'use strict';
 
 // 1. Identifie les données nécessaires.
 // 2. Écris ta solution sous cette ligne.
 // TODO: écris ta solution ici.
-const email = "   utilisateur@email.com   ";
-const emailpropre = email.trim();
-console.log(emailpropre);
+let livres =[
+   {titre: "Les Misérablles", auteur: "Victor Hugo"},
+   {titre: "La Boîte à Mervilles", auteur: "Ahmed Sefrioui"},
+   {titre: "Candide ou l'Optimisme", auteur: "Votaire"},
+];
+console.log(livres[1].titre);

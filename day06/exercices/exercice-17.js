@@ -1,20 +1,17 @@
 /**
  * ─────────────────────────────────────────────────────────────
- * JOUR 04 · EXERCICE 12 · NIVEAU 2 : CONSOLIDATION (INTERMÉDIAIRES)
- * INVERSION DE MOTS DANS UNE PHRASE
+ * JOUR 06 · EXERCICE 17 · NIVEAU 3 : DÉFI (AVANCÉS)
+ * NETTOYAGE DE SCRAPING AVEC DES OBJETS
  * ─────────────────────────────────────────────────────────────
  *
  * 🎯 MISSION
- * Prenez la phrase "Bonjour le monde" et transformez-la en "monde le Bonjour".
+ * Vous avez scrappé une liste de prix : [{ article: "PC", prix: "1500$" }, { article: "Souris", prix: "25$" }]. Écrivez une fonction qui modifie les objets pour que le prix devienne un vrai Number (enlever le "$").
  *
- * 📖 Consigne détaillée : ../03-exercices.md#exercice-12
- * ▶️ Commande : node day04/exercices/exercice-12.js
+ * 📖 Consigne détaillée : ../03-exercices.md#exercice-17
+ * ▶️ Commande : node day06/exercices/exercice-17.js
  */
 'use strict';
 
 // 1. Identifie les données nécessaires.
 // 2. Écris ta solution sous cette ligne.
 // TODO: écris ta solution ici.
-const phrase = "Bonjour le monde";
-let phraseInversee = phrase.split(" ").reverse().join(" ");
-console.log(phraseInversee);
