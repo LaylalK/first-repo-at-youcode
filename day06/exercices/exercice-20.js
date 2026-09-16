@@ -15,3 +15,15 @@
 // 1. Identifie les données nécessaires.
 // 2. Écris ta solution sous cette ligne.
 // TODO: écris ta solution ici.
+let information ={prenom: "aya", age: 21, adresse : {ville: "Nador"}};
+let copie = {...information};
+copie.adresse.ville = "Tanger";
+console.log(information.adresse.ville);
+//commentaire:
+//  Le Spread operator (...) fait seulement un Shallow Copy.
+// Pour les objets imbriqués, il copie uniquement la référence mémoire,
+// donc modifier la copie modifie aussi l'original.
+let vraicopie = structuredClone(information);
+vraicopie.adresse.ville = "Fes";
+console.log(information.adresse.ville);
+console.log(vraicopie.adresse.ville);

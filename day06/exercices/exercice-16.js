@@ -15,3 +15,9 @@
 // 1. Identifie les données nécessaires.
 // 2. Écris ta solution sous cette ligne.
 // TODO: écris ta solution ici.
+let entreprise ={nom: "Maroc Telecom", employes:[
+{prenom: "Hafida", age: 26},
+{prenom: "Mohammed", age: 27},
+]
+};
+console.log(entreprise.employes[1].prenom);

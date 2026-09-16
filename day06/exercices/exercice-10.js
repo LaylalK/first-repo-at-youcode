@@ -15,7 +15,15 @@
 // 1. Identifie les données nécessaires.
 // 2. Écris ta solution sous cette ligne.
 // TODO: écris ta solution ici.
-function caractères"abracadabra"{
-const compteur = {};
-
+function calcullettres(chaîne){
+    const compteur = {};
+for (const lettres of chaîne){
+if (lettres in compteur){
+compteur[lettres]++;
+}else{
+    compteur[lettres] = 1;
 }
+}
+return compteur;
+};
+console.log(calcullettres("abracadabra"));

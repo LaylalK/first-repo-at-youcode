@@ -15,3 +15,6 @@
 // 1. Identifie les données nécessaires.
 // 2. Écris ta solution sous cette ligne.
 // TODO: écris ta solution ici.
+let grille = [[1, 2], [3, 4], [5, 6]];
+let resultat = grille.flat();
+console.log(resultat); 

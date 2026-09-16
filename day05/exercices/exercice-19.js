@@ -15,3 +15,23 @@
 // 1. Identifie les données nécessaires.
 // 2. Écris ta solution sous cette ligne.
 // TODO: écris ta solution ici.
+let tableau = [10, 20, 30, 40, 45, 50, 60];
+let cible = 45;
+
+function rechercheBinaire(arr, elem) {
+let debut = 0;
+let fin = arr.length - 1;
+ while (debut <= fin) {
+let milieu = Math.floor((debut + fin) / 2);
+if (arr[milieu] === elem) {
+ return milieu; 
+ }
+ if (arr[milieu] < elem) {
+debut = milieu + 1; 
+ } else {
+fin = milieu - 1; 
+ }
+ }
+ return -1; 
+}
+console.log(rechercheBinaire(tableau, cible));

@@ -15,3 +15,32 @@
 // 1. Identifie les données nécessaires.
 // 2. Écris ta solution sous cette ligne.
 // TODO: écris ta solution ici.
+let tab1 =[1, 3, 5];
+let tab2 =[2, 4, 6];
+function fusionnerTries(t1, t2){
+    let resultat = [];
+    let i = 0;
+    let j = 0;
+    while (i <t1.length && j <t2.length){
+  if (t1[i] < t2[j]) {
+     resultat.push(t1[i]);
+ i++;
+  } else {
+     resultat.push(t2[j]);
+ j++;
+        }
+    }
+    while (i < t1.length) {
+        resultat.push(t1[i]);
+        i++;
+    }
+    while (j < t2.length) {
+ resultat.push(t2[j]);
+ j++;
+    }
+
+    return resultat;
+}
+
+console.log(fusionnerTries(tab1, tab2));
+    

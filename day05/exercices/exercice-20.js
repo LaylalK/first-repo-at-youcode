@@ -15,3 +15,17 @@
 // 1. Identifie les données nécessaires.
 // 2. Écris ta solution sous cette ligne.
 // TODO: écris ta solution ici.
+let couleurs = ["Rouge", "Vert", "Bleu"];
+function genererPaires(tab) {
+let paires = [];
+for (let i = 0; i < tab.length; i++) {
+ for (let j = 0; j < tab.length; j++) {
+ if (i !== j) {
+  paires.push(`${tab[i]}-${tab[j]}`);
+ }
+ }
+ }
+ return paires;
+}
+
+console.log(genererPaires(couleurs));

@@ -15,3 +15,15 @@
 // 1. Identifie les données nécessaires.
 // 2. Écris ta solution sous cette ligne.
 // TODO: écris ta solution ici.
+let information =[{nom: "A", groupe: 1}, {nom: "B", groupe: 2}, {nom: "C", groupe: 1}];
+function regroupegroupe(tableau){
+    const result = {};
+    for (let item of tableau){
+        if (!result[item.groupe]){
+            result[item.groupe] = [];
+        };
+        result[item.groupe].push({ nom: item.nom });
+    };
+    return result;
+};
+console.log(regroupegroupe(information));

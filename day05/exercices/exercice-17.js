@@ -15,3 +15,16 @@
 // 1. Identifie les données nécessaires.
 // 2. Écris ta solution sous cette ligne.
 // TODO: écris ta solution ici.
+let mots =["pomme", "banane", "pomme", "orange", "banane", "pomme"];
+function comterOccurences(tableau){
+    const fruits = {};
+for (let mot of tableau) {
+if (fruits[mot]) {
+ fruits[mot] += 1;
+ } else {
+  fruits[mot] = 1;
+}
+}
+return fruits;
+}
+console.log(comterOccurences(mots));

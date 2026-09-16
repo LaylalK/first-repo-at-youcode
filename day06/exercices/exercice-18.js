@@ -15,3 +15,10 @@
 // 1. Identifie les données nécessaires.
 // 2. Écris ta solution sous cette ligne.
 // TODO: écris ta solution ici.
+function sontIdentiques(obj1, obj2){
+    let str1 = JSON.stringify(obj1);
+    let str2 = JSON.stringify(obj2);
+return str1 === str2
+}
+console.log(sontIdentiques({c: 5}, {c: 5}));
+console.log(sontIdentiques({a: 2}, {b: 6}));

@@ -21,3 +21,41 @@
 
 // Découpe d'abord le problème en petites étapes.
 // TODO: écris ta solution ici.
+let utilisateurs = [];
+let compteurId = 1;
+function ajouterUtilisateur(nom, email) {
+  let utilisateur = {
+    id: compteurId,
+    nom: nom,
+    email: email
+  };
+  utilisateurs.push(utilisateur);
+  compteurId++;
+}
+function trouverParEmail(email) {
+  for (let i = 0; i < utilisateurs.length; i++) {
+    if (utilisateurs[i].email === email) {
+      return utilisateurs[i];
+    }
+  }
+  return null;
+}
+function supprimerParId(id) {
+  for (let i = 0; i < utilisateurs.length; i++) {
+    if (utilisateurs[i].id === id) {
+      utilisateurs.splice(i, 1);
+      break;
+    }
+  }
+}
+function afficherAnnuaire() {
+  for (let i = 0; i < utilisateurs.length; i++) {
+    console.log(utilisateurs[i].id + ' - ' + utilisateurs[i].nom + ' - ' + utilisateurs[i].email);
+  }
+}
+ajouterUtilisateur('Alice', 'alice@mail.com');
+ajouterUtilisateur('Bob', 'bob@mail.com');
+afficherAnnuaire();
+console.log(trouverParEmail('alice@mail.com'));
+supprimerParId(1);
+afficherAnnuaire();
